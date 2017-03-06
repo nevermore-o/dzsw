@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context debug= "9" reloadable="false" verbosity="4">    
+    <!--Resource name="jdbc/flyz"
+     auth="Container" type="javax.sql.DataSource"
+      password="" 
+      driverClassName="org.hsqldb.jdbcDriver" 
+      maxIdle="10" maxWait="5000" 
+      username="sa" 
+      url="jdbc:hsqldb:hsql://localhost/xdb"  
+      maxActive="40" removeAbandoned="true" removeAbandonedTimeout="180" logAbandoned="true"/-->
+
+   <Resource name="dzswDataSource" auth="Container" type="javax.sql.DataSource" 
+   driverClassName="oracle.jdbc.driver.OracleDriver" 
+   url="jdbc:oracle:thin:@localhost:1521:orcl" 
+   username="dzsw" password="open" maxActive="20" maxIdle="10" maxWait="10000"/>
+</Context>
